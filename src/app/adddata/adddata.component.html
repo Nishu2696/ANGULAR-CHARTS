@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="barform" (submit)='senddata()'>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label for="">Year</label>
+                    <input type="text" formControlName="year" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label for="">Data-1</label>
+                    <input type="text" formControlName="data1" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label for="">Data-2</label>
+                    <input type="text" formControlName="data2" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center" >
+                <input type="submit" class="btn btn-primary" value="submit">
+            </div>
+        </div>
+    </form>
+</div>
